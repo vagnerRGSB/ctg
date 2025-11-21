@@ -3,7 +3,7 @@ namespace App\Interfaces;
 
 use CodeIgniter\HTTP\ResponseInterface;
 
-interface ReadCrontroller{
+interface IReadCrontroller{
         public function index():ResponseInterface;
     public function show(int $id):ResponseInterface;
 }
