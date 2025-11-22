@@ -10,6 +10,17 @@
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
         crossorigin="anonymous">
 
+    <style>
+        /* CSS Personalizado Mínimo */
+        /* Apenas para ajustar a altura total da tela para os próximos passos */
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Organiza: Topo em cima, o resto embaixo */
+            overflow: hidden; /* Evita rolagem dupla */
+        }
+    </style>
+
     <?=  $this->renderSection("styles") ?>
 </head>
 
@@ -19,7 +30,7 @@
      <?= $this->include("Layouts/Partes/nav_bar_sec")?>
 
   <div class="container-fluid position-relative">
-    <?= $this->renderSection("conteudo") ?>
+    <?= $this->renderSection("conteudos") ?>
   </div>
     <?=  $this->include("Layouts/Partes/footer") ?>
 
