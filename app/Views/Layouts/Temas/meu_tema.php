@@ -26,8 +26,8 @@
 
 <body>
 
-     <?= $this->include("Layouts/Partes/nav_bar_pri") ?>
-     <?= $this->include("Layouts/Partes/nav_bar_sec")?>
+     <?= $this->include("Layouts/Partes/header") ?>
+     <?= $this->include("Layouts/Partes/sidebar")?>
 
   <div class="container-fluid position-relative">
     <?= $this->renderSection("conteudos") ?>
